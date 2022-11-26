@@ -1,0 +1,108 @@
+body {
+  background-color: #f4f4f5;
+}
+
+.bg-dark {
+  /* background-color: #151b22 !important; */
+  background-color: #004d25 !important;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* .slide-left-enter-active, */
+.slide-left-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.slide-left-enter,
+.slide-left-leave-to {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* .slide-right-enter-active, */
+.slide-right-leave-active {
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+.slide-right-enter,
+.slide-right-leave-to {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+
+.bounce-enter-active {
+  transform-origin: top;
+  animation: bounce-in 0.8s;
+}
+.bounce-leave-active {
+  transform-origin: top;
+  animation: bounce-out 0.5s;
+}
+
+/* .items.card {
+  border-radius: 2rem;
+} */
+/* .items > .card-body {
+  padding: 10px 0;
+} */
+/* .items > .card-body .card-body {
+  padding: 0;
+} */
+
+.section-blade {
+  position: relative;
+  box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+  cursor: pointer;
+  user-select: none;
+  margin: 8px 0;
+  border-radius: 0.457rem;
+  overflow: hidden;
+  height: 130px;
+}
+
+.section-blade-content {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: #00000030;
+}
+.section-blade-text {
+  font-size: 28px;
+  color: white;
+}
+
+.sectionButton {
+  transition: transform 0.4s;
+}
+.sectionButton:hover {
+  transform: scale(1.01) translateY(-5px);
+}
+.sectionButton:active {
+  transform: scale(0.98);
+  background: linear-gradient(30deg, #d2b2d4 0%, #b1b7df 100%);
+  color: #c0b5da;
+  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.15),
+    1px 1px 15px 2px rgba(154, 137, 164, 0.1);
+  text-shadow: 1px -1px 1px rgba(143, 162, 199, 0.75),
+    -1px 1px 1px rgba(192, 151, 178, 0.75);
+  transition: transform 0.1s, background 0.3s, color 0.2s, text-shadow 0.3s,
+    box-shadow 0.3s;
+}
+.sectionButton > div {
+  transition: transform 0.3s;
+}
+.sectionButton > div:active {
+  transition: transform 0.3s, background 0.3s, color 0.2s, text-shadow 0.3s,
+    box-shadow 0.3s;
+  transform: scale(1.05) translateX(-19px);
+}
